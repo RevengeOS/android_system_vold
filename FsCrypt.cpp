@@ -204,7 +204,7 @@ static bool read_and_fixate_user_ce_key(userid_t user_id,
 
 bool is_wrapped_key_supported() {
     auto entry = GetEntryForMountPoint(&fstab_default, DATA_MNT_POINT);
-    return entry && entry->fs_mgr_flags.wrappedkey;
+    return entry && entry->fs_mgr_flags.wrapped_key;
 }
 
 bool is_wrapped_key_supported_external() {
